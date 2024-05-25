@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Salmonphone</h1>
+        <h2>Product Compare</h2>
+    </header>
+    <div class="container">
+        <div class="product-selection">
+            <div class="product">
+                <label for="product1">Product 1:</label>
+                <select id="product1" onchange="loadProductDetails(1)">
+                    <option value="">Select a product</option>
+                </select>
+            </div>
+            <div class="product">
+                <label for="product2">Product 2:</label>
+                <select id="product2" onchange="loadProductDetails(2)">
+                    <option value="">Select a product</option>
+                </select>
+            </div>
+        </div>
+        <div class="comparison">
+            <div class="product-details" id="product-details-1">
+                <img id="product-image-1" src="" alt="Product 1 Image">
+                <h3 id="product-name-1">Product Name</h3>
+                <ul id="product-detail-list-1"></ul>
+            </div>
+            <div class="product-details" id="product-details-2">
+                <img id="product-image-2" src="" alt="Product 2 Image">
+                <h3 id="product-name-2">Product Name</h3>
+                <ul id="product-detail-list-2"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
